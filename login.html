@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login & Registration Form</title>
+    <!---Custom CSS File--->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/login.css" rel="stylesheet" />
+    <!-- <script src="assets/js/auth/login.js" defer></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="check" />
+      <div class="alert alert-success d-none" role="alert"></div>
+      <div class="alert alert-danger d-none" role="alert"></div>
+      <div class="login form">
+        <header>
+          <a href="index.html" class="logo-link">
+            <img src="assets/img/logo.svg" alt="Logo" />
+          </a>
+        </header>
+        <form id="form_login">
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            class="form-control"
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <div class="d-grid mt-4 mb-0">
+            <button
+              class="btn btn-dark btn-block d-flex align-items-center justify-content-center"
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Don't have an account?
+            <label for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Signup</header>
+        <form id="form_register">
+          <input
+            class="form-control"
+            id="firstname"
+            name="first_name"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="form-control"
+            id="lastname"
+            name="last_name"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            class="form-control"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            class="form-control"
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            class="form-control"
+            id="password_confirmation"
+            name="password_confirmation"
+            type="password"
+            placeholder="Confirm password"
+            required
+          />
+          <button
+            class="btn btn-dark btn-block d-flex align-items-center justify-content-center"
+            type="submit"
+          >
+            Create Account
+          </button>
+        </form>
+        <div class="signup">
+          <span class="signup"
+            >Already have an account?
+            <label for="check">Login</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="assets/js/auth/login.js" defer></script>
+    <script type="module" src="assets/js/auth/reg.js" defer></script>
+  </body>
+</html>
